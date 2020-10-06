@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">  
+         
+	<bean id="university" class="org.practice.UniversityProject.University">
+		<property name="name" value="Concordia"/>
+		<property name="address" value="Montreal, Canada"/>
+		<property name="rank" value="100"/>
+	</bean>   
+	
+	<bean id="COMP626" class="org.practice.UniversityProject.Course">
+		<constructor-arg value="COMP"/>
+		<constructor-arg type="int" value="626"/>
+		<constructor-arg value="Machine Learning"/>
+		<constructor-arg value="Machine Learning Concepts Description"/>
+	</bean>
+	
+	<bean id="COMP894" class="org.practice.UniversityProject.Course">
+		<constructor-arg value="COMP"/>
+		<constructor-arg type="int" value="894"/>
+		<constructor-arg value="Distributed Systems"/>
+		<constructor-arg value="Distributed Systems Concepts Description"/>
+	</bean>
+	
+	<bean id="student" class="org.practice.UniversityProject.Student" autowire="byName">
+		<property name="id" value="42183898"/>
+		<property name="name" value="Sahaj Sharma"/>
+		<property name="courses">
+			<list>
+				<ref bean="COMP626"/>
+				<ref bean="COMP894"/>
+			</list>
+		</property>
+	</bean>   
+	
+ </beans>
