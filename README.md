@@ -1,5 +1,5 @@
 # University-Structure
-This project was created to learn and practice the basics of [spring-core](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html).
+This project was created to learn and practice the basics of [spring-core](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html). It uses xml-based configuration.
 It displays details of the:
 - student
 - courses he/she has
