@@ -1,11 +1,11 @@
 # University-Structure
-This project was created to learn and practice the basics of [spring-core](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html). It uses xml-based configuration.
+This project was created to learn and practice the basics of [spring-core](https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/core.html). It uses XML-based configuration.
 It displays details of the:
 - student
 - courses he/she has
 - university he/she belongs to
 
-## Prerequites
+## Prerequisites
 - Java 8
 - Eclipse IDE
 - GIT
